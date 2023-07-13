@@ -1,0 +1,6 @@
+extends:
+  - ./eurodata.yml
+
+formats: [oas3]
+
+rules: {}
