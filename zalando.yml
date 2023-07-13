@@ -364,7 +364,7 @@ rules:
     then:
       function: pattern
       functionOptions:
-        match: ^application\/(problem\+)?json$|^[a-zA-Z0-9_]+\/[-+.a-zA-Z0-9_]+;(v|version)=[0-9]+$
+        match: ^application\/[-+.a-zA-Z0-9_]+$|text\/[-+.a-zA-Z0-9_]+$|video\/[-+.a-zA-Z0-9_]+$|model\/[-+.a-zA-Z0-9_]+$|image\/[-+.a-zA-Z0-9_]+$|font\/[-+.a-zA-Z0-9_]+$|audio\/[-+.a-zA-Z0-9_]+$|^[a-zA-Z0-9_]+\/[-+.a-zA-Z0-9_]+;(v|version)=[0-9]+$
 
   # MUST support problem JSON [176]
   # => https://opensource.zalando.com/restful-api-guidelines/#176
