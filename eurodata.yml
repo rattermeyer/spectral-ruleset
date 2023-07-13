@@ -1,5 +1,5 @@
 extends: # We're extending the zalando ruleset by replacing or adding baloise specific rules.
-  - https://raw.githubusercontent.com/rattermeyer/spectral-ruleset/main/zalando.yml
+  - https://raw.githubusercontent.com/rattermeyer/spectral-ruleset/v0.8.0/zalando.yml
 
 functions:
   - validate-b3-tracing
