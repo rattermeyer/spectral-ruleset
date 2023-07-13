@@ -5,7 +5,7 @@ describe('SHOULD prefer standard media type name application/json [172]', () => 
   test('Detect non-standard media type name', async () => {
     const openApi = await loadOpenApiSpec('base-openapi.yml');
     openApi.paths['/example'].get.responses['200'].content = {
-      'application/x.zalando.cart+json': {
+      'binary/pdf': {
         schema: { type: 'object' },
       },
     };
@@ -15,7 +15,7 @@ describe('SHOULD prefer standard media type name application/json [172]', () => 
         code: 'should-prefer-standard-media-type-names',
         message: 'Custom media types should only be used for versioning',
         severity: DiagnosticSeverity.Warning,
-        path: ['paths', '/example', 'get', 'responses', '200', 'content', 'application/x.zalando.cart+json'],
+        path: ['paths', '/example', 'get', 'responses', '200', 'content', 'binary/pdf'],
       }),
     ]);
   });

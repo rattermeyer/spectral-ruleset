@@ -1,7 +1,7 @@
 {
-  "name": "@baloise/spectral-rules",
-  "version": "1.1.3",
-  "description": "Custom Spectral API Linter ruleset for Baloise API Guidelines based on Zalando API guidelines.",
+  "name": "@eurodata/spectral-rules",
+  "version": "0.8.0",
+  "description": "Custom Spectral API Linter ruleset for eurodata API Guidelines based on Zalando API guidelines.",
   "main": ".spectral.yml",
   "scripts": {
     "lint": "eslint \"{*/**/*.js,*/**/*.ts}\"",
@@ -9,9 +9,8 @@
     "test": "jest"
   },
   "author": {
-    "name": "Baloise Group",
-    "email": "Group.CH_Open-Source@baloise.ch",
-    "url": "https://github.com/baloise/"
+    "name": "eurodata",
+    "url": "https://git.eurodata.de/ea/engineering-handbook/eurodata-spectral-ruleset"
   },
   "license": "Apache-2.0",
   "devDependencies": {
